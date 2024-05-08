@@ -46,3 +46,4 @@ pergunta.question('Insira seu nome: ', (resposta) => {
     pergunta.close();
 });
 
+console.log("O personagem:" + Personagem + " Tem o Elo:" + Elo);
