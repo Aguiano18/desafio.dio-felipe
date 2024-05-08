@@ -34,6 +34,15 @@ if (Experiencia >= 10001){
     Elo = "Radiante";
 }
 
-const Heroi = "O jogador:" + Personagem + " Possui o Elo:" + Elo;
+const Heroi = require('readline');
 
-console.log(Heroi);
+const pergunta = Heroi.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+pergunta.question('Insira seu nome: ', (resposta) => {
+    console.log('O jogador:' + `${resposta}` + ' tem o Elo:' + Elo);
+    pergunta.close();
+});
+
