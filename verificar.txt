@@ -1,0 +1,17 @@
+function verificar() {
+    if (slots[a][1] > 18){
+        var qtd_item_div = Math.ceil(Qtd / 18);
+        for (var j = 0; j < qtd_item_div; j++) {
+            if (slots[j][0] === Item || slots[j][0] === 0){
+                var qtd = (Qtd > 18) ? 18 : Qtd;
+                slots[j] = [Item, qtd]; 
+                $gameMessage.add(slots[j]);
+                Qtd -= qtd;
+            } else {
+                qtd_item_div++
+            }
+        }
+    } else {
+        $gameMessage.add(slots[a]);
+    }
+}

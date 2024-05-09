@@ -46,4 +46,4 @@ pergunta.question('Insira seu nome: ', (resposta) => {
     pergunta.close();
 });
 
-console.log("O personagem:" + Personagem + " Tem o Elo:" + Elo);
+console.log(`O jogador: ${Personagem} Tem o Elo:${Elo}`);
